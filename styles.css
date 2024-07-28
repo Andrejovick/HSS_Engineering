@@ -1,114 +1,92 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
+/* Ensure the html and body take up the full height */
+html, body {
+  height: 100%;
   margin: 0;
-  font-family: sans-serif;
-  background: #f5f6f7;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-.header {
-  text-align: left;
-  text-transform: uppercase;
-  padding: 15px 7%;
+/* Basic styling for body */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
   background-color: #262646;
-  color: #fff;
+  color: white;
+  padding: 15px 7%;
   border-bottom: 4px solid #fdb347;
 }
 
-nav {
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.logo {
+  width: 400px;
 }
 
-.logo {
-  width: 300px;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
 }
 
 nav ul {
-  padding: 0;
-  margin: 0;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 nav ul li {
-  display: inline-block;
-  font-size: large;
   margin: 10px 15px;
 }
 
 nav ul li a {
+  color: white;
   text-decoration: none;
-  color: #e6e6e6;
-  font-weight: 400;
+  font-size: 18px;
 }
 
-.footer {
-  text-align: left;
-  padding: 15px 7%;
-  background-color: #262646;
-  color: #fff;
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Flex-grow the content area to take up remaining space */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+footer {
   border-top: 4px solid #fdb347;
 }
 
-.container {
-  max-width: 1170px;
-  margin: auto;
-}
-
-.row {
+/* Footer styling */
+.footer-container {
+  background-color: #262646;
+  color: #fff;
+  padding: 15px 7%;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.footer-col {
-  width: 25%;
-  padding: 0 15px;
+.footer-section {
+  flex: 1;
+  margin: 0 10px;
 }
 
-.footer-col h4 {
-  font-size: 18px;
-  color: #ffffff;
-  margin-bottom: 35px;
-  font-weight: 500;
-  position: relative;
+.footer-section h4 {
+  margin-bottom: 20px;
 }
 
-.footer-col h4::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  background-color: #e91e63;
-  height: 2px;
-  width: 50px;
-}
-
-.footer-col ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.footer-col ul li:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.footer-col ul li a {
-  font-size: 16px;
-  color: #bbbbbb;
+.footer-section p {
+  color: #fff;
   text-decoration: none;
-  font-weight: 300;
-  display: block;
-  transition: all 0.3s ease;
-}
-
-.footer-col ul li a:hover {
-  color: #ffffff;
-  padding-left: 8px;
+  margin: 5px 0;
 }
 
 .gmaps {
