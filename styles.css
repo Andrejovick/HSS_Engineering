@@ -9,7 +9,7 @@ html, body {
 
 /* Basic styling for body */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 18px;
 }
 
@@ -60,6 +60,7 @@ nav ul li a:hover {
 .icontent {
   flex: 1;
   padding: 5%;
+  text-indent: 20px;
 }
 
 .icontent2 {
