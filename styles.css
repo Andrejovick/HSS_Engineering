@@ -57,7 +57,19 @@ nav ul li a:hover {
 }
 
 /* Flex-grow the content area to take up remaining space */
-.content {
+.icontent {
+  flex: 1;
+  padding-left: 5%;
+  padding-top: 2%;
+}
+
+.pcontent {
+  flex: 1;
+  padding-left: 5%;
+  padding-top: 2%;
+}
+
+.ccontent h1 {
   flex: 1;
   padding-left: 5%;
   padding-top: 2%;
